@@ -11,14 +11,14 @@ const EmailSidebar = () => {
       className="fixed right-8 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block"
     >
       <motion.a
-        href="mailto:ronakprabhu@gmail.com"
+        href="mailto:ronakvp21@gmail.com"
         whileHover={{ scale: 1.1, y: -5 }}
         whileTap={{ scale: 0.9 }}
         className="flex flex-col items-center space-y-4 text-accent-500 hover:text-accent-400 transition-colors duration-300"
       >
         <Mail size={20} />
         <div className="writing-mode-vertical text-sm font-mono tracking-wider">
-          ronakprabhu@gmail.com
+          ronakvp21@gmail.com
         </div>
       </motion.a>
       

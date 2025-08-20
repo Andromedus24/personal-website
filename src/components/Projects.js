@@ -15,7 +15,7 @@ const Projects = () => {
       description: "Converted EEG brain signals into real-time wheelchair commands with 95% directional accuracy by integrating pylsl, boosting mobility for users with motor impairments. Minimized noise in live EEG streams by 60% using a custom signal processing pipeline with buffering, notch filtering, and multi-band decomposition (alpha, beta, theta, delta). Accelerated control feedback loop by 35% through a containerized Python–React pipeline using Flask, PostgreSQL, and Docker, enabling responsive mental-state-driven navigation.",
       image: "/img/port1.jpg",
       technologies: ["Python", "Flask", "React", "PostgreSQL", "Docker", "EEG", "pylsl", "Signal Processing"],
-      github: "https://github.com/RonakPrabhu/NeuroWheelchair",
+      github: "https://github.com/Andromedus24/NeuroWheelchair",
       demo: null,
       category: "AI/ML"
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       description: "An artificial intelligence call assistant that interprets user voice input and responds on calls in real-time. Designed for customers to call and inquire about reservations, menus, and to place orders. Built with natural language processing and voice recognition capabilities.",
       image: "/img/port2.jpg",
       technologies: ["Python", "NLTK", "Natural Language Processing", "Voice Recognition", "AI"],
-      github: "https://github.com/RonakPrabhu/AICallAssistant",
+      github: "https://github.com/Andromedus24/AICallAssistant",
       demo: null,
       category: "AI/ML"
     },
@@ -33,7 +33,7 @@ const Projects = () => {
       description: "Program that allows you to control any 3D object through hand gestures received by a camera. Uses computer vision and gesture recognition to manipulate 3D objects in real-time, providing an intuitive interface for object manipulation.",
       image: "/img/port3.jpg",
       technologies: ["Python", "Computer Vision", "OpenCV", "3D Graphics", "Gesture Recognition"],
-      github: "https://github.com/RonakPrabhu/HandControlledObject",
+      github: "https://github.com/Andromedus24/HandControlledObject",
       demo: null,
       category: "Computer Vision"
     },
@@ -42,7 +42,7 @@ const Projects = () => {
       description: "Advanced radio interferometer system powered by artificial intelligence for astronomical observations. Part of the Astraeus project for black hole reconstruction and radio telescope data processing. Achieved ~31% sharper resolution than baseline models.",
       image: "/img/port4.jpg",
       technologies: ["Python", "TensorFlow", "Deep Learning", "Radio Astronomy", "Signal Processing"],
-      github: "https://github.com/RonakPrabhu/AI-Powered-Radio-Interferometer",
+      github: "https://github.com/Andromedus24/AI-Powered-Radio-Interferometer",
       demo: "https://ronakprabhu.github.io/Astraeus/",
       category: "AI/ML"
     },
@@ -51,7 +51,7 @@ const Projects = () => {
       description: "A Python-based YouTube video downloader application that allows users to download videos from YouTube with various quality options. Features include format selection, quality control, and batch downloading capabilities.",
       image: "/img/port5.jpg",
       technologies: ["Python", "yt-dlp", "GUI", "Video Processing", "Web Scraping"],
-      github: "https://github.com/RonakPrabhu/YoutubeDownloader",
+      github: "https://github.com/Andromedus24/YoutubeDownloader",
       demo: null,
       category: "Web Development"
     }
@@ -199,7 +199,7 @@ const Projects = () => {
             className="text-center mt-12"
           >
             <motion.a
-              href="https://github.com/RonakPrabhu"
+              href="https://github.com/Andromedus24"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}

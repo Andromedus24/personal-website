@@ -229,7 +229,7 @@ const Hero = () => {
           {/* Social Links */}
           <motion.div variants={itemVariants} className="flex justify-center items-center gap-6">
             <motion.a
-              href="https://github.com/RonakPrabhu"
+              href="https://github.com/Andromedus24"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -241,7 +241,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="https://www.linkedin.com/in/ronakprabhu/"
+              href="https://www.linkedin.com/in/ronak-prabhu/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -253,7 +253,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="mailto:ronakprabhu@gmail.com"
+              href="mailto:ronakvp21@gmail.com"
               whileHover={{ scale: 1.2, y: -5 }}
               whileTap={{ scale: 0.9 }}
               className="p-3 bg-dark-800 hover:bg-accent-500 rounded-full transition-all duration-300 group relative overflow-hidden"

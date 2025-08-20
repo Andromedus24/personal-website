@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -26,12 +26,14 @@ const Contact = () => {
     script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
     script.async = true;
     script.onload = () => {
-      if (window.emailjs) {
-        window.emailjs.init('XZ3rtnOZg0S8kq68e');
-        console.log('EmailJS initialized');
-      } else {
-        console.error('EmailJS failed to load');
-      }
+              if (window.emailjs) {
+          // Use environment variables if available, fallback to hardcoded values
+          const userId = process.env.REACT_APP_EMAIL_USER_ID || 'XZ3rtnOZg0S8kq68e';
+          window.emailjs.init(userId);
+          console.log('EmailJS initialized');
+        } else {
+          console.error('EmailJS failed to load');
+        }
     };
     script.onerror = () => {
       console.error('Failed to load EmailJS script');
@@ -76,7 +78,9 @@ const Contact = () => {
       console.log('Form Data:', data);
 
       // Send email using EmailJS
-      const response = await window.emailjs.send('service_sxljepi', 'template_1fg7wfl', data);
+      const serviceId = process.env.REACT_APP_EMAIL_SERVICE || 'service_sxljepi';
+      const templateId = process.env.REACT_APP_EMAIL_TEMPLATE || 'template_1fg7wfl';
+      const response = await window.emailjs.send(serviceId, templateId, data);
       
       console.log('EmailJS Response:', response);
       setSubmitStatus('success');
@@ -104,27 +108,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'ronakprabhu@gmail.com',
-      href: 'mailto:ronakprabhu@gmail.com'
+      value: 'ronakvp21@gmail.com',
+      href: 'mailto:ronakvp21@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1-647-458-9009',
-      href: 'tel:+1-647-458-9009'
+      value: '669-224-5957',
+      href: 'tel:669-224-5957'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Ontario, Canada',
+      value: 'Cupertino, CA, USA',
       href: null
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/RonakPrabhu', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/ronakprabhu/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+    { icon: Github, href: 'https://github.com/Andromedus24', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ronak-prabhu/', label: 'LinkedIn' }
   ];
 
   const containerVariants = {
