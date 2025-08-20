@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
@@ -19,6 +19,36 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
 
+  // Initialize EmailJS
+  useEffect(() => {
+    // Load EmailJS script
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+    script.async = true;
+    script.onload = () => {
+      if (window.emailjs) {
+        // Initialize EmailJS with your service key
+        const userId = 'XZ3rtnOZg0S8kq68e'; // Your EmailJS user ID
+        window.emailjs.init(userId);
+        console.log('EmailJS initialized successfully');
+      } else {
+        console.error('EmailJS failed to load');
+      }
+    };
+    script.onerror = () => {
+      console.error('Failed to load EmailJS script');
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script if component unmounts
+      const existingScript = document.querySelector('script[src*="emailjs"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -32,12 +62,27 @@ const Contact = () => {
     setSubmitStatus(null);
     
     try {
-      // Simulate form submission delay for better UX
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Check if EmailJS is available
+      if (!window.emailjs) {
+        throw new Error('EmailJS not loaded');
+      }
+
+      // Prepare data for EmailJS
+      const data = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      console.log('Form Data:', data);
+
+      // Send email using EmailJS with your service key
+      const serviceId = 'service_fqc3ds1'; // Your EmailJS service ID
+      const templateId = 'template_1fg7wfl'; // Your EmailJS template ID
+      const response = await window.emailjs.send(serviceId, templateId, data);
       
-      // Use mailto as the primary method since it's more reliable
-      handleMailtoFallback();
-      
+      console.log('EmailJS Response:', response);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
       
@@ -47,7 +92,7 @@ const Contact = () => {
       }, 5000);
       
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error('EmailJS Error:', error);
       setSubmitStatus('error');
       
       // Clear error message after 5 seconds
@@ -252,38 +297,25 @@ const Contact = () => {
                   />
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <motion.button
-                    type="submit"
-                    disabled={isSubmitting}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex-1 px-8 py-4 bg-accent-500 hover:bg-accent-600 disabled:bg-dark-600 text-white rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                        <span>Sending...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Send size={20} />
-                        <span>Send Message</span>
-                      </>
-                    )}
-                  </motion.button>
-                  
-                  <motion.button
-                    type="button"
-                    onClick={handleMailtoFallback}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="px-8 py-4 border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
-                  >
-                    <Mail size={20} />
-                    <span>Direct Email</span>
-                  </motion.button>
-                </div>
+                <motion.button
+                  type="submit"
+                  disabled={isSubmitting}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full px-8 py-4 bg-accent-500 hover:bg-accent-600 disabled:bg-dark-600 text-white rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={20} />
+                      <span>Send Message</span>
+                    </>
+                  )}
+                </motion.button>
               </form>
 
               {/* Status Messages */}
@@ -314,7 +346,7 @@ const Contact = () => {
                           <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <span>Failed to send message. You can use the "Use Email" button as a fallback.</span>
+                      <span>Failed to send message. Please try again or check your internet connection.</span>
                     </div>
                   )}
                 </motion.div>
