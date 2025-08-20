@@ -1,4 +1,4 @@
-# Krish Desai - Modern Portfolio Website
+# Ronak Prabhu - Modern Portfolio Website
 
 A stunning, modern portfolio website built with React, Framer Motion, and Tailwind CSS. Features animated particles, smooth transitions, and a professional design that showcases skills and projects effectively.
 
@@ -171,10 +171,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: krishhsdesai@gmail.com
-- **Phone**: +1-647-458-9009
-- **Location**: Ontario, Canada
+- **Email**: ronakvp21@gmail.com
+- **Phone**: +1-669-224-5957
+- **Location**: Cupertino, California
 
 ---
 
-Built with ❤️ by Krish Desai
+Built with ❤️ by Ronak Prabhu
