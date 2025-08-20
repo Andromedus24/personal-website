@@ -104,11 +104,7 @@ const Contact = () => {
     }
   };
 
-  const handleMailtoFallback = () => {
-    const { name, email, subject, message } = formData;
-    const mailtoLink = `mailto:ronakvp21@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-    window.location.href = mailtoLink;
-  };
+
 
   const contactInfo = [
     {
