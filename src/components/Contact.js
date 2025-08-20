@@ -27,8 +27,8 @@ const Contact = () => {
     script.async = true;
     script.onload = () => {
       if (window.emailjs) {
-        // Initialize EmailJS with your service key
-        const userId = 'XZ3rtnOZg0S8kq68e'; // Your EmailJS user ID
+        // Initialize EmailJS with your public key
+        const userId = 'WDRe3qLve2C3BEM4C'; // Your EmailJS public key
         window.emailjs.init(userId);
         console.log('EmailJS initialized successfully');
       } else {
