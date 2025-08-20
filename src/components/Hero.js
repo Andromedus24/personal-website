@@ -7,10 +7,10 @@ const Hero = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
   const texts = [
-    "Software Developer",
-    "Research Assistant", 
-    "Founding Engineer",
-    "Problem Solver"
+    "VC Scout",
+    "AI Researcher", 
+    "Climate Tech Founder",
+    "Full-Stack Developer"
   ];
 
   useEffect(() => {
@@ -178,26 +178,25 @@ const Hero = () => {
 
           {/* Description */}
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-dark-300 mb-16 max-w-2xl mx-auto leading-relaxed">
-            A passionate software developer and research assistant with expertise in full-stack development, 
-            machine learning, and AI-powered applications. Currently pursuing the International Baccalaureate 
-            program while working as a Founding Engineer at Rounds.so and Research Assistant at University of Toronto.
+            Senior at Monta Vista High School focused on CS, Finance, and Statistics. Passionate about advancing ML applications 
+            and building technical projects. Interested in scaling frontier tech, building founder-first products, and rethinking finance through AI.
           </motion.p>
 
           {/* Stats */}
           <motion.div variants={itemVariants} className="flex justify-center items-center gap-8 mb-16 text-sm">
             <div className="text-center">
-              <div className="text-2xl font-bold gradient-text">3+</div>
-              <div className="text-dark-400">Years Experience</div>
-            </div>
-            <div className="w-px h-8 bg-dark-700"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold gradient-text">10+</div>
-              <div className="text-dark-400">Projects Completed</div>
+              <div className="text-2xl font-bold gradient-text">20+</div>
+              <div className="text-dark-400">Projects Built</div>
             </div>
             <div className="w-px h-8 bg-dark-700"></div>
             <div className="text-center">
               <div className="text-2xl font-bold gradient-text">15+</div>
               <div className="text-dark-400">Technologies</div>
+            </div>
+            <div className="w-px h-8 bg-dark-700"></div>
+            <div className="text-center">
+              <div className="text-2xl font-bold gradient-text">10+</div>
+              <div className="text-dark-400">Awards Won</div>
             </div>
           </motion.div>
 
@@ -229,7 +228,7 @@ const Hero = () => {
           {/* Social Links */}
           <motion.div variants={itemVariants} className="flex justify-center items-center gap-6">
             <motion.a
-              href="https://github.com/Andromedus24"
+              href="https://github.com/ronakprabhu"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}

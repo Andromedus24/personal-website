@@ -11,67 +11,225 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Founding Engineer",
-      company: "Rounds.so",
+      title: "Senior Venture Scout",
+      company: "LvlUp Ventures",
       duration: "June 2025 - Present",
-      location: "Atlanta, GA",
+      location: "Remote",
       description: [
-        "Built a real-time, full-stack mock interview platform enabling live collaborative coding, structured peer feedback, and AI-powered code review using Monaco Editor, OpenAI API, and custom Flask APIs",
-        "Scaled infrastructure on GCP, Firebase, and PostgreSQL to support thousands of users with 200ms response time and 99.9% uptime",
-        "Reduced interview setup time by 40% through interactive scheduling tools and dashboards powered by Axios and backend metrics endpoints",
-        "Drove rapid prototyping with co-founders to streamline onboarding and achieve a 25% boost in session completion via JWT authentication, responsive UIs, and user-driven iteration"
+        "Sourced 100+ deals for LvlUp Ventures VC funding and investment opportunities",
+        "Analyzed startup viability, market potential, and investment readiness",
+        "Built relationships with founders and entrepreneurs in the tech ecosystem",
+        "Contributed to investment decision-making processes and due diligence"
       ],
-      technologies: ["Flask", "React", "PostgreSQL", "OpenAI", "Google Cloud", "Firebase", "Monaco Editor", "JWT"]
+      technologies: ["Deal Sourcing", "Investment Analysis", "Startup Evaluation", "VC Operations"]
     },
     {
-      title: "Research Assistant",
-      company: "University of Toronto",
-      duration: "Sep. 2024 - Present",
-      location: "Toronto, ON",
+      title: "Growth (Clipping & Content)",
+      company: "Cluely",
+      duration: "April 2025 - Present",
+      location: "Remote",
       description: [
-        "Developed 'Astraeus,' under Dr. Aviad Levis, an AI-powered imaging pipeline in Python and TensorFlow to reconstruct black holes from radio telescope data, achieving ~31% sharper resolution than baseline models",
-        "Trained a deep neural network on 1.4TB of simulated telescope data, decreasing reconstruction time by 6× while improving image accuracy (SSIM) from 0.58 to 0.85",
-        "Deployed a research website and GitHub repository, generating 600+ unique visitors and downstream forks by researchers in the first month, enabling reproducibility for research teams across domains",
-        "Delivered a 45-minute talk at UofT's CS Academy to 30+ students and PhDs, sparking a follow-up collaboration to scale the pipeline for multi-dish telescope arrays"
+        "Create and publish engaging clips and content for the platform",
+        "Develop content strategies to drive user engagement and growth",
+        "Collaborate with the team to optimize content performance",
+        "Examples available in Google Drive folder for reference"
       ],
-      technologies: ["Python", "TensorFlow", "Deep Learning", "HTML", "CSS", "JavaScript", "Research"]
+      technologies: ["Content Creation", "Growth Marketing", "Video Editing", "Social Media"]
     },
     {
-      title: "Software Engineer",
-      company: "Stacked Pancakes Breakfast House",
+      title: "Figma Student Creator",
+      company: "Figma",
+      duration: "July 2025 - Present",
+      location: "Remote",
+      description: [
+        "Attend Figma-sponsored events and participate in the creator community",
+        "Produce design content and tutorials for the Figma ecosystem",
+        "Collaborate with other creators and designers globally",
+        "Contribute to the growth of the Figma design community"
+      ],
+      technologies: ["Figma", "Design", "Content Creation", "Community Building"]
+    },
+    {
+      title: "Growth & Management",
+      company: "Ultra",
+      duration: "May 2025 - August 2025",
+      location: "Remote",
+      description: [
+        "Supported growth targets and helped build the Ultra Community",
+        "Managed the Ultra Club Initiative and community engagement programs",
+        "Developed strategies to increase user acquisition and retention",
+        "Collaborated with cross-functional teams to optimize growth metrics"
+      ],
+      technologies: ["Growth Marketing", "Community Management", "User Acquisition", "Strategy"]
+    },
+    {
+      title: "Climate Leaders Fellow",
+      company: "Stanford Deliberative Democracy Lab",
+      duration: "February 2025 - August 2025",
+      location: "Stanford, CA",
+      description: [
+        "Selected from 3,000+ applicants across 28+ countries for climate waste-mitigation software solutions",
+        "Authored research on climate-destructive laws and their environmental impact",
+        "Presented findings on textile waste and its contribution to climate change",
+        "Developed software tools to address climate waste challenges"
+      ],
+      technologies: ["Climate Research", "Software Development", "Data Analysis", "Policy Research"]
+    },
+    {
+      title: "SWE Resident",
+      company: "Headstarter",
+      duration: "March 2025 - July 2025",
+      location: "Remote",
+      description: [
+        "Built multiple full-stack applications focused on AI and Finance",
+        "Mentored by professionals from Google, Two Sigma, Stanford, Citadel, Tesla, and more",
+        "Developed technical skills in modern web development and AI integration",
+        "Collaborated with peers on innovative projects and solutions"
+      ],
+      technologies: ["Full-Stack Development", "AI/ML", "Finance", "React", "Python", "Node.js"]
+    },
+    {
+      title: "AI Research Fellow & Stanford DDL Project Lead",
+      company: "Perrin Research Institution",
+      duration: "December 2024 - July 2025",
+      location: "Remote",
+      description: [
+        "Project Lead for Stanford DDL paper on climate initiatives and textile pollution",
+        "Researched AI technology and impacts for Harvard Ventures paper",
+        "Collaborated with Stanford Climate Fellowship on research initiatives",
+        "Published research findings in academic and industry publications"
+      ],
+      technologies: ["AI Research", "Climate Science", "Research Methods", "Academic Writing"]
+    },
+    {
+      title: "Director of Sales & Marketing",
+      company: "VenturEd",
+      duration: "December 2024 - June 2025",
+      location: "Remote",
+      description: [
+        "Conducted comprehensive marketing research and analyzed trends in the student ecosystem",
+        "Developed marketing strategies to increase brand awareness and engagement",
+        "Managed sales operations and customer relationship management",
+        "Analyzed market data to inform business decisions and growth strategies"
+      ],
+      technologies: ["Marketing Research", "Sales Management", "Market Analysis", "Strategy"]
+    },
+    {
+      title: "Grey Swan AI Arena Global Champion",
+      company: "Gray Swan AI",
+      duration: "March 2025 - May 2025",
+      location: "Global Competition",
+      description: [
+        "Global Champion in Agent Red-Teaming Cybersecurity Challenge",
+        "Successfully broke and pen-tested models modeled after ChatGPT, Gemini, and Claude",
+        "Winner from a $171,800 prize pool sponsored by UK AISI, OpenAI, Anthropic, Google DeepMind",
+        "Demonstrated advanced AI security testing and red-teaming capabilities"
+      ],
+      technologies: ["AI Security", "Red-Teaming", "Cybersecurity", "Penetration Testing"]
+    },
+    {
+      title: "Discover Curator",
+      company: "Perplexity",
+      duration: "October 2024 - April 2025",
+      location: "Remote",
+      description: [
+        "Accumulated 20k+ total views across pieces on niche topics and subjects",
+        "Curated and created content for the Perplexity platform",
+        "Developed expertise in content creation and audience engagement",
+        "Contributed to platform growth through quality content curation"
+      ],
+      technologies: ["Content Creation", "Content Curation", "SEO", "Audience Engagement"]
+    },
+    {
+      title: "Student Climate Ambassador & Intern",
+      company: "Acterra",
+      duration: "July 2024 - April 2025",
+      location: "San Francisco Bay Area",
+      description: [
+        "Lobbied for congressional change and promoted sustainability initiatives",
+        "Engaged with policymakers to advocate for climate action",
+        "Organized community events and educational programs on sustainability",
+        "Contributed to local and national climate policy discussions"
+      ],
+      technologies: ["Policy Advocacy", "Community Organizing", "Sustainability", "Public Speaking"]
+    },
+    {
+      title: "State & Local Champion (1st Place FTDM) & Finance Lead",
+      company: "DECA Inc.",
+      duration: "August 2022 - April 2025",
+      location: "California",
+      description: [
+        "1st Place SVCDC and 1st Place SCDC in Financial Team Decision Making",
+        "Served as Finance Lead, managing team financial strategies and decisions",
+        "Competed at state and local levels in business and finance competitions",
+        "Developed strong analytical and decision-making skills in financial scenarios"
+      ],
+      technologies: ["Financial Analysis", "Team Leadership", "Competition Strategy", "Business Acumen"]
+    },
+    {
+      title: "Multimodal AI Research",
+      company: "Safe AI Lab (CMU)",
+      duration: "February 2024 - March 2025",
+      location: "Carnegie Mellon University",
+      description: [
+        "Completed multimodal AI research under CMU/MIT/UPenn graduate mentors",
+        "Developed AI systems that can process and understand multiple types of data",
+        "Contributed to cutting-edge research in artificial intelligence and machine learning",
+        "Collaborated with researchers from top institutions on innovative AI projects"
+      ],
+      technologies: ["Multimodal AI", "Machine Learning", "Research", "Python", "TensorFlow"]
+    },
+    {
+      title: "Research Intern",
+      company: "NASA (SEES Program)",
       duration: "May 2024 - August 2024",
-      location: "Toronto, ON",
+      location: "NASA/UT Austin",
       description: [
-        "Engineered an AI call assistant using Twilio and Python for 3 franchise locations, reducing average call time by 40% and lowering staff workload by 30%",
-        "Analyzed call data to benchmark AI vs. human performance, informing rollout decisions that improved customer satisfaction by 15% while maintaining cost-efficiency",
-        "Integrated scheduling and FAQ systems, enabling autonomous resolution of common queries and saving $8700 per location annually in labor costs",
-        "Deployed a live fallback system to human agents, maintaining service continuity and increasing peak-hour call capacity by 2.3×"
+        "Selected for SEES (UT Austin CSR × NASA) program",
+        "Collaborated with Subject Matter Experts and peers to detect and characterize exoplanet transits",
+        "Used photometry and Python-based computing for astronomical data analysis",
+        "Contributed to NASA's exoplanet research and discovery efforts"
       ],
-      technologies: ["Python", "Flask", "Twilio", "Pandas", "REST APIs", "Docker"]
+      technologies: ["Astronomy", "Python", "Data Analysis", "Photometry", "Exoplanet Research"]
     },
     {
-      title: "President",
-      company: "Turner Fenton Rocketry Association",
-      duration: "2023 - Present",
-      location: "Brampton, ON",
+      title: "Autonomous Systems",
+      company: "Penn Engineering AI (xLab, F1TENTH)",
+      duration: "March 2024 - August 2024",
+      location: "University of Pennsylvania",
       description: [
-        "Coordinated team activities and delegated tasks to ensure efficient completion of projects",
-        "Established fundraising strategies to increase financial support for programs and services",
-        "Programmed air pressure rockets through Arduino using C++ and used diverse components such as IMU, Gyroscope, bluetooth modules and more"
+        "Built an autonomous race car as part of UPenn's F1TENTH program",
+        "Developed autonomous navigation and control systems for racing applications",
+        "Worked with cutting-edge robotics and AI technologies",
+        "Contributed to the advancement of autonomous vehicle technology"
       ],
-      technologies: ["Arduino", "C++", "IMU", "Bluetooth", "Leadership"]
+      technologies: ["Autonomous Systems", "Robotics", "AI", "Control Systems", "Hardware Integration"]
     },
     {
-      title: "Logistics Executive",
-      company: "SPARK",
-      duration: "2024 - Present",
-      location: "Brampton, ON",
+      title: "AI Governance Student Representative",
+      company: "UN IGF PNAI",
+      duration: "March 2024 - June 2024",
+      location: "United Nations",
       description: [
-        "Developed and implemented a comprehensive schedule and itinerary for the hackathon",
-        "Achieved cost-efficiency without compromising quality through thought-out budgeting",
-        "Negotiated and secured partnerships with sponsors and vendors"
+        "Published a paper and opinion piece as a student AI governance representative",
+        "Contributed to international discussions on AI policy and governance",
+        "Represented student perspectives in global AI governance forums",
+        "Advocated for responsible AI development and deployment"
       ],
-      technologies: ["Event Planning", "Budgeting", "Partnerships", "Logistics"]
+      technologies: ["AI Governance", "Policy Analysis", "International Relations", "Research"]
+    },
+    {
+      title: "AI Policy Fellow",
+      company: "Berkeley AI Safety Student Initiative",
+      duration: "January 2024 - May 2024",
+      location: "UC Berkeley",
+      description: [
+        "Studied AI, AI Policy, and AI Safety under Berkeley graduate and undergraduate mentors",
+        "Researched the implications of AI development on society and safety",
+        "Contributed to discussions on responsible AI development and deployment",
+        "Developed expertise in AI safety and policy considerations"
+      ],
+      technologies: ["AI Safety", "Policy Research", "Ethics", "Risk Assessment"]
     }
   ];
 

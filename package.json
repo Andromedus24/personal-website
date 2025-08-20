@@ -2,7 +2,7 @@
   "name": "ronak-prabhu-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://andromedus24.github.io/personal-website",
+  "homepage": "https://ronakprabhu.github.io/personal-website",
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.4",

@@ -11,49 +11,58 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Mind Controlled AI Wheelchair",
-      description: "Converted EEG brain signals into real-time wheelchair commands with 95% directional accuracy by integrating pylsl, boosting mobility for users with motor impairments. Minimized noise in live EEG streams by 60% using a custom signal processing pipeline with buffering, notch filtering, and multi-band decomposition (alpha, beta, theta, delta). Accelerated control feedback loop by 35% through a containerized Python–React pipeline using Flask, PostgreSQL, and Docker, enabling responsive mental-state-driven navigation.",
+      title: "Finlo - AI CFO & Finance OS",
+      description: "Built an AI CFO & finance OS that auto-logs expenses, balances books, flags anomalies, and forecasts cash flow—freeing SMBs from spreadsheets and pricey consultants. Winner of AgentHacks 2025 with comprehensive financial automation capabilities.",
       image: "/img/port1.jpg",
-      technologies: ["Python", "Flask", "React", "PostgreSQL", "Docker", "EEG", "pylsl", "Signal Processing"],
-      github: "https://github.com/Andromedus24/NeuroWheelchair",
-      demo: null,
+      technologies: ["Python", "AI/ML", "Finance", "Automation", "Full-Stack", "React", "Node.js"],
+      github: "https://github.com/ronakprabhu/finlo",
+      demo: "https://devpost.com/software/finlo-finance-flow",
       category: "AI/ML"
     },
     {
-      title: "AI Call Assistant",
-      description: "An artificial intelligence call assistant that interprets user voice input and responds on calls in real-time. Designed for customers to call and inquire about reservations, menus, and to place orders. Built with natural language processing and voice recognition capabilities.",
+      title: "Climate Waste-Mitigation Software",
+      description: "Developed climate waste-mitigation software solutions as Stanford Climate Leaders Fellow. Built tools to address textile waste and climate-destructive laws, contributing to environmental sustainability research and policy.",
       image: "/img/port2.jpg",
-      technologies: ["Python", "NLTK", "Natural Language Processing", "Voice Recognition", "AI"],
-      github: "https://github.com/Andromedus24/AICallAssistant",
+      technologies: ["Python", "Climate Tech", "Data Analysis", "Policy Research", "Software Development"],
+      github: "https://github.com/ronakprabhu/climate-waste-mitigation",
       demo: null,
-      category: "AI/ML"
+      category: "Climate Tech"
     },
     {
-      title: "Hand Controlled 3D Object",
-      description: "Program that allows you to control any 3D object through hand gestures received by a camera. Uses computer vision and gesture recognition to manipulate 3D objects in real-time, providing an intuitive interface for object manipulation.",
+      title: "Multimodal AI Research Platform",
+      description: "Completed multimodal AI research under CMU/MIT/UPenn graduate mentors at Safe AI Lab. Developed AI systems that can process and understand multiple types of data, contributing to cutting-edge AI research.",
       image: "/img/port3.jpg",
-      technologies: ["Python", "Computer Vision", "OpenCV", "3D Graphics", "Gesture Recognition"],
-      github: "https://github.com/Andromedus24/HandControlledObject",
-      demo: null,
-      category: "Computer Vision"
-    },
-    {
-      title: "AI-Powered Radio Interferometer",
-      description: "Advanced radio interferometer system powered by artificial intelligence for astronomical observations. Part of the Astraeus project for black hole reconstruction and radio telescope data processing. Achieved ~31% sharper resolution than baseline models.",
-      image: "/img/port4.jpg",
-      technologies: ["Python", "TensorFlow", "Deep Learning", "Radio Astronomy", "Signal Processing"],
-      github: "https://github.com/Andromedus24/AI-Powered-Radio-Interferometer",
-      demo: "https://ronakprabhu.github.io/Astraeus/",
+      technologies: ["Python", "TensorFlow", "Multimodal AI", "Machine Learning", "Research", "Deep Learning"],
+      github: "https://github.com/ronakprabhu/multimodal-ai-research",
+      demo: "https://safeai-lab.github.io/",
       category: "AI/ML"
     },
     {
-      title: "YouTube Downloader",
-      description: "A Python-based YouTube video downloader application that allows users to download videos from YouTube with various quality options. Features include format selection, quality control, and batch downloading capabilities.",
-      image: "/img/port5.jpg",
-      technologies: ["Python", "yt-dlp", "GUI", "Video Processing", "Web Scraping"],
-      github: "https://github.com/Andromedus24/YoutubeDownloader",
+      title: "Autonomous Race Car (F1TENTH)",
+      description: "Built an autonomous race car as part of UPenn's F1TENTH program. Developed autonomous navigation and control systems for racing applications using cutting-edge robotics and AI technologies.",
+      image: "/img/port4.jpg",
+      technologies: ["Python", "Robotics", "Autonomous Systems", "Control Systems", "Hardware Integration", "AI"],
+      github: "https://github.com/ronakprabhu/f1tenth-autonomous",
       demo: null,
-      category: "Web Development"
+      category: "Robotics"
+    },
+    {
+      title: "Exoplanet Detection System",
+      description: "Collaborated with NASA SEES program to detect and characterize exoplanet transits using photometry and Python-based computing. Contributed to NASA's exoplanet research and discovery efforts.",
+      image: "/img/port5.jpg",
+      technologies: ["Python", "Astronomy", "Data Analysis", "Photometry", "Exoplanet Research", "NASA"],
+      github: "https://github.com/ronakprabhu/exoplanet-detection",
+      demo: null,
+      category: "Research"
+    },
+    {
+      title: "AI Governance Research Platform",
+      description: "Published research and opinion pieces as UN IGF PNAI student representative. Contributed to international discussions on AI policy and governance, advocating for responsible AI development.",
+      image: "/img/port6.jpg",
+      technologies: ["Research", "AI Governance", "Policy Analysis", "International Relations", "Academic Writing"],
+      github: "https://github.com/ronakprabhu/ai-governance-research",
+      demo: null,
+      category: "Research"
     }
   ];
 
@@ -93,6 +102,12 @@ const Projects = () => {
         return Hand;
       case "Radio Astronomy":
         return Radio;
+      case "Climate Tech":
+        return Globe;
+      case "Robotics":
+        return Code;
+      case "Research":
+        return Brain;
       default:
         return Code;
     }
@@ -199,7 +214,7 @@ const Projects = () => {
             className="text-center mt-12"
           >
             <motion.a
-              href="https://github.com/Andromedus24"
+              href="https://github.com/ronakprabhu"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}

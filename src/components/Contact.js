@@ -126,7 +126,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Andromedus24', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/ronakprabhu', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/ronak-prabhu/', label: 'LinkedIn' }
   ];
 

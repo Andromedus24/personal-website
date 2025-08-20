@@ -10,12 +10,12 @@ const About = () => {
   });
 
   const skills = [
-    { name: 'Python', level: 90, icon: Code, color: 'from-green-400 to-emerald-500' },
-    { name: 'JavaScript', level: 85, icon: Code, color: 'from-yellow-400 to-orange-500' },
+    { name: 'Python', level: 95, icon: Code, color: 'from-green-400 to-emerald-500' },
+    { name: 'JavaScript', level: 90, icon: Code, color: 'from-yellow-400 to-orange-500' },
     { name: 'React', level: 88, icon: Zap, color: 'from-blue-400 to-cyan-500' },
-    { name: 'Flask', level: 82, icon: Server, color: 'from-gray-400 to-gray-500' },
-    { name: 'TensorFlow', level: 80, icon: Brain, color: 'from-orange-400 to-red-500' },
-    { name: 'PostgreSQL', level: 78, icon: Database, color: 'from-blue-500 to-blue-600' },
+    { name: 'Flask', level: 85, icon: Server, color: 'from-gray-400 to-gray-500' },
+    { name: 'TensorFlow', level: 90, icon: Brain, color: 'from-orange-400 to-red-500' },
+    { name: 'PostgreSQL', level: 82, icon: Database, color: 'from-blue-500 to-blue-600' },
   ];
 
   const containerVariants = {
@@ -69,37 +69,35 @@ const About = () => {
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-white mb-4">
-                  Passionate Developer & Research Assistant
+                  VC Scout & AI Researcher
                 </h3>
                 <p className="text-dark-300 leading-relaxed">
-                  I'm a dedicated software developer and research assistant with a passion for creating innovative solutions 
-                  that make a real impact. Currently pursuing the International Baccalaureate program at Turner Fenton Secondary School 
-                  with a focus on computer science and mathematics.
+                  I'm a senior at Monta Vista High School with a passion for advancing ML applications and building technical projects. 
+                  Currently working as a Senior Venture Scout at LvlUp Ventures, sourcing 100+ deals for VC funding and investment.
                 </p>
                 <p className="text-dark-300 leading-relaxed">
-                  As a Founding Engineer at Rounds.so, I've built a real-time mock interview platform that supports thousands of users. 
-                  I also work as a Research Assistant at the University of Toronto, developing AI-powered imaging pipelines for black hole reconstruction 
-                  under Dr. Aviad Levis.
+                  As an AI Research Fellow at Perrin Research Institution, I lead Stanford DDL projects on climate initiatives and textile pollution. 
+                  I've also completed research at CMU, UPenn, and NASA, working on multimodal AI, autonomous systems, and exoplanet detection.
                 </p>
                 <p className="text-dark-300 leading-relaxed">
-                  My expertise spans full-stack development, machine learning, and hardware integration. I believe in writing clean, 
-                  maintainable code and staying up-to-date with the latest technologies to solve complex real-world problems.
+                  My expertise spans full-stack development, machine learning, AI governance, and climate tech. I'm interested in scaling frontier tech, 
+                  building founder-first products, and rethinking finance through AI. I've won multiple global competitions including the Gray Swan AI Arena Global Championship.
                 </p>
               </div>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center p-4 bg-dark-800/50 rounded-lg border border-dark-700/50">
-                  <div className="text-2xl font-bold gradient-text">3+</div>
-                  <div className="text-sm text-dark-400">Years Experience</div>
-                </div>
-                <div className="text-center p-4 bg-dark-800/50 rounded-lg border border-dark-700/50">
-                  <div className="text-2xl font-bold gradient-text">10+</div>
-                  <div className="text-sm text-dark-400">Projects</div>
+                  <div className="text-2xl font-bold gradient-text">20+</div>
+                  <div className="text-sm text-dark-400">Projects Built</div>
                 </div>
                 <div className="text-center p-4 bg-dark-800/50 rounded-lg border border-dark-700/50">
                   <div className="text-2xl font-bold gradient-text">15+</div>
                   <div className="text-sm text-dark-400">Technologies</div>
+                </div>
+                <div className="text-center p-4 bg-dark-800/50 rounded-lg border border-dark-700/50">
+                  <div className="text-2xl font-bold gradient-text">10+</div>
+                  <div className="text-sm text-dark-400">Awards Won</div>
                 </div>
               </div>
             </motion.div>
@@ -142,16 +140,16 @@ const About = () => {
                   <h4 className="text-white font-semibold mb-2">Languages</h4>
                   <div className="text-sm text-dark-400 space-y-1">
                     <div>Python, JavaScript, TypeScript</div>
-                    <div>HTML/CSS, C++, SQL</div>
+                    <div>HTML/CSS, C++, SQL (Postgres)</div>
                     <div>MATLAB, JSON</div>
                   </div>
                 </div>
                 <div className="p-4 bg-dark-800/50 rounded-lg border border-dark-700/50">
                   <h4 className="text-white font-semibold mb-2">Frameworks & Tools</h4>
                   <div className="text-sm text-dark-400 space-y-1">
-                    <div>React, Node.js, Flask</div>
-                    <div>TailwindCSS, FastAPI</div>
-                    <div>Docker, GCP, Firebase</div>
+                    <div>React, Node.js, Flask, FastAPI</div>
+                    <div>TailwindCSS, Bootstrap, Dialogflow</div>
+                    <div>Docker, GCP, Firebase, REST APIs</div>
                   </div>
                 </div>
               </div>
@@ -168,10 +166,10 @@ const About = () => {
                 <div className="p-2 bg-accent-500/20 rounded-lg">
                   <Brain size={20} className="text-accent-500" />
                 </div>
-                <h4 className="text-white font-semibold">AI/ML Expertise</h4>
+                <h4 className="text-white font-semibold">AI/ML & Research</h4>
               </div>
               <p className="text-dark-300 text-sm">
-                Deep learning with TensorFlow, signal processing, and AI-powered applications for real-world impact.
+                Deep learning with TensorFlow/PyTorch, multimodal AI research, and AI governance. Experience at CMU, UPenn, NASA, and Stanford.
               </p>
             </div>
 
@@ -183,7 +181,7 @@ const About = () => {
                 <h4 className="text-white font-semibold">Full-Stack Development</h4>
               </div>
               <p className="text-dark-300 text-sm">
-                Building scalable applications with modern technologies and cloud infrastructure for optimal performance.
+                Building scalable applications with React, Node.js, Flask, and cloud infrastructure. Experience with GCP, Firebase, and Docker.
               </p>
             </div>
 
@@ -192,10 +190,10 @@ const About = () => {
                 <div className="p-2 bg-green-500/20 rounded-lg">
                   <Code size={20} className="text-green-500" />
                 </div>
-                <h4 className="text-white font-semibold">Research & Innovation</h4>
+                <h4 className="text-white font-semibold">Climate Tech & Innovation</h4>
               </div>
               <p className="text-dark-300 text-sm">
-                Contributing to cutting-edge research in astrophysics and developing innovative solutions for complex problems.
+                Climate Leaders Fellow at Stanford, building climate waste-mitigation software solutions and researching climate-destructive laws.
               </p>
             </div>
           </motion.div>
