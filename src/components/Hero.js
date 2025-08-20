@@ -9,7 +9,7 @@ const Hero = () => {
   const texts = [
     "VC Scout",
     "AI Researcher", 
-    "Climate Tech Founder",
+    "Climate Tech Fellow",
     "Full-Stack Developer"
   ];
 
@@ -178,8 +178,8 @@ const Hero = () => {
 
           {/* Description */}
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-dark-300 mb-16 max-w-2xl mx-auto leading-relaxed">
-            Senior at Monta Vista High School focused on CS, Finance, and Statistics. Passionate about advancing ML applications 
-            and building technical projects. Interested in scaling frontier tech, building founder-first products, and rethinking finance through AI.
+            Senior Venture Scout @ LvlUp Ventures · prev AI @ CMU, UPenn, NASA · Growth @ Ultra, Cluely · Fellow @ Harvard, Stanford, Berkeley. 
+            Passionate about advancing ML applications and building technical projects. Interested in scaling frontier tech, building founder-first products, and rethinking finance through AI.
           </motion.p>
 
           {/* Stats */}

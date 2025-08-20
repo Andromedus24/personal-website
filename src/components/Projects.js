@@ -12,57 +12,111 @@ const Projects = () => {
   const projects = [
     {
       title: "Finlo - AI CFO & Finance OS",
-      description: "Built an AI CFO & finance OS that auto-logs expenses, balances books, flags anomalies, and forecasts cash flow—freeing SMBs from spreadsheets and pricey consultants. Winner of AgentHacks 2025 with comprehensive financial automation capabilities.",
+      description: "AI CFO & finance OS that auto-logs expenses, balances books, flags anomalies, and forecasts cash flow—freeing SMBs from spreadsheets and pricey consultants. Forked for experimentation and customization.",
       image: "/img/port1.jpg",
-      technologies: ["Python", "AI/ML", "Finance", "Automation", "Full-Stack", "React", "Node.js"],
+      technologies: ["TypeScript", "Next.js", "AI/ML", "Finance", "Automation", "Full-Stack"],
       github: "https://github.com/ronakprabhu/finlo",
-      demo: "https://devpost.com/software/finlo-finance-flow",
+      demo: null,
       category: "AI/ML"
     },
     {
-      title: "Climate Waste-Mitigation Software",
-      description: "Developed climate waste-mitigation software solutions as Stanford Climate Leaders Fellow. Built tools to address textile waste and climate-destructive laws, contributing to environmental sustainability research and policy.",
+      title: "web-muse - AI Site Builder",
+      description: "CLI and API for generating websites from natural language. Includes environment setup, OpenAI config, and example prompts for building landing pages and web applications.",
       image: "/img/port2.jpg",
-      technologies: ["Python", "Climate Tech", "Data Analysis", "Policy Research", "Software Development"],
-      github: "https://github.com/ronakprabhu/climate-waste-mitigation",
+      technologies: ["JavaScript", "Node.js", "CLI", "OpenAI API", "Web Generation", "AI"],
+      github: "https://github.com/ronakprabhu/web-muse",
       demo: null,
-      category: "Climate Tech"
-    },
-    {
-      title: "Multimodal AI Research Platform",
-      description: "Completed multimodal AI research under CMU/MIT/UPenn graduate mentors at Safe AI Lab. Developed AI systems that can process and understand multiple types of data, contributing to cutting-edge AI research.",
-      image: "/img/port3.jpg",
-      technologies: ["Python", "TensorFlow", "Multimodal AI", "Machine Learning", "Research", "Deep Learning"],
-      github: "https://github.com/ronakprabhu/multimodal-ai-research",
-      demo: "https://safeai-lab.github.io/",
       category: "AI/ML"
     },
     {
-      title: "Autonomous Race Car (F1TENTH)",
-      description: "Built an autonomous race car as part of UPenn's F1TENTH program. Developed autonomous navigation and control systems for racing applications using cutting-edge robotics and AI technologies.",
+      title: "House Price Predictor",
+      description: "Linear Regression model predicting California housing prices with standard preprocessing, training, and evaluation. Built with scikit-learn, NumPy, and Pandas.",
+      image: "/img/port3.jpg",
+      technologies: ["Python", "Machine Learning", "scikit-learn", "NumPy", "Pandas", "Jupyter"],
+      github: "https://github.com/ronakprabhu/House-Price-Predictor",
+      demo: null,
+      category: "AI/ML"
+    },
+    {
+      title: "AI Call Assistant",
+      description: "Rule/intent-based assistant with simple NLU and training script. Built for handling customer service calls and inquiries with natural language processing.",
       image: "/img/port4.jpg",
-      technologies: ["Python", "Robotics", "Autonomous Systems", "Control Systems", "Hardware Integration", "AI"],
-      github: "https://github.com/ronakprabhu/f1tenth-autonomous",
+      technologies: ["Python", "NLP", "NLTK", "Intent Recognition", "Chatbot", "AI"],
+      github: "https://github.com/ronakprabhu/AI-Call-Assistant",
       demo: null,
-      category: "Robotics"
+      category: "AI/ML"
     },
     {
-      title: "Exoplanet Detection System",
-      description: "Collaborated with NASA SEES program to detect and characterize exoplanet transits using photometry and Python-based computing. Contributed to NASA's exoplanet research and discovery efforts.",
+      title: "Hand Controlled Object",
+      description: "Computer vision prototype with camera capture and 3D object loading utilities. Demonstrates hand gesture recognition and 3D object manipulation.",
       image: "/img/port5.jpg",
-      technologies: ["Python", "Astronomy", "Data Analysis", "Photometry", "Exoplanet Research", "NASA"],
-      github: "https://github.com/ronakprabhu/exoplanet-detection",
+      technologies: ["Python", "Computer Vision", "OpenCV", "3D Graphics", "Gesture Recognition"],
+      github: "https://github.com/ronakprabhu/Hand-Controlled-Object",
       demo: null,
-      category: "Research"
+      category: "Computer Vision"
     },
     {
-      title: "AI Governance Research Platform",
-      description: "Published research and opinion pieces as UN IGF PNAI student representative. Contributed to international discussions on AI policy and governance, advocating for responsible AI development.",
+      title: "Nuero Wheelchair",
+      description: "Neuro/gesture-driven wheelchair controller prototype. Combines Python utilities with Arduino for brain-computer interface applications.",
       image: "/img/port6.jpg",
-      technologies: ["Research", "AI Governance", "Policy Analysis", "International Relations", "Academic Writing"],
-      github: "https://github.com/ronakprabhu/ai-governance-research",
+      technologies: ["Python", "C++", "Arduino", "Brain-Computer Interface", "Hardware", "Embedded Systems"],
+      github: "https://github.com/ronakprabhu/Nuero-Wheelchair",
       demo: null,
-      category: "Research"
+      category: "Hardware/IoT"
+    },
+    {
+      title: "Finance Analysis API",
+      description: "Unified financial analysis + ledger API with AI-powered insights using OpenRouter. Designed for Vercel deployment with CI/CD and real-time validation.",
+      image: "/img/port1.jpg",
+      technologies: ["TypeScript", "Next.js", "AI", "Finance", "API", "Vercel", "OpenRouter"],
+      github: "https://github.com/ronakprabhu/Finance-Analysis",
+      demo: null,
+      category: "Web Development"
+    },
+    {
+      title: "Finance Cluster",
+      description: "React webapp scaffolded with Create React App, intended to connect to a Visual Learning AI model to create clusters from financial data.",
+      image: "/img/port2.jpg",
+      technologies: ["React", "JavaScript", "AI/ML", "Data Visualization", "Financial Analysis"],
+      github: "https://github.com/ronakprabhu/Finance-Cluster",
+      demo: null,
+      category: "Web Development"
+    },
+    {
+      title: "Firebase Android Quiz App",
+      description: "Android quiz app using Firebase for auth, realtime-database, storage, and notifications. Features timer-bound tests, detailed solutions, and admin features.",
+      image: "/img/port3.jpg",
+      technologies: ["Java", "Android", "Firebase", "Realtime Database", "Push Notifications", "Mobile"],
+      github: "https://github.com/ronakprabhu/firebase-android-quiz-app",
+      demo: null,
+      category: "Mobile Development"
+    },
+    {
+      title: "NIA MCP Personal",
+      description: "MCP server that integrates Nia's codebase understanding into tools like Cursor and Claude via function-calling. Enables AI-powered codebase analysis.",
+      image: "/img/port4.jpg",
+      technologies: ["JavaScript", "MCP", "AI", "Codebase Analysis", "Developer Tools"],
+      github: "https://github.com/ronakprabhu/nia-mcp-personal",
+      demo: null,
+      category: "Developer Tools"
+    },
+    {
+      title: "Financial Model Evaluator",
+      description: "JavaScript front-end base intended to connect to a distilled/trained AI model for financial model evaluation. Includes sample data and testing framework.",
+      image: "/img/port5.jpg",
+      technologies: ["JavaScript", "HTML", "CSS", "AI/ML", "Financial Modeling", "Testing"],
+      github: "https://github.com/ronakprabhu/Financial-Model-Eval",
+      demo: null,
+      category: "Web Development"
+    },
+    {
+      title: "AgentHacks Clone",
+      description: "Minimal clone project bootstrapped for experimentation. Built for testing and developing AI agent capabilities and workflows.",
+      image: "/img/port6.jpg",
+      technologies: ["JavaScript", "React", "AI Agents", "Experimentation", "Prototyping"],
+      github: "https://github.com/ronakprabhu/AgentHacks_Clone",
+      demo: null,
+      category: "AI/ML"
     }
   ];
 
@@ -100,8 +154,8 @@ const Projects = () => {
         return Brain;
       case "Computer Vision":
         return Hand;
-      case "Radio Astronomy":
-        return Radio;
+      case "Developer Tools":
+        return Code;
       case "Climate Tech":
         return Globe;
       case "Robotics":

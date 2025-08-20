@@ -76,10 +76,10 @@ const About = () => {
                   Currently working as a Senior Venture Scout at LvlUp Ventures, sourcing 100+ deals for VC funding and investment.
                 </p>
                 <p className="text-dark-300 leading-relaxed">
-                  As an AI Research Fellow at Perrin Research Institution, I lead Stanford DDL projects on climate initiatives and textile pollution. 
-                  I've also completed research at CMU, UPenn, and NASA, working on multimodal AI, autonomous systems, and exoplanet detection.
+                  My AI research journey spans prestigious institutions: At <strong>CMU</strong>, I worked on multimodal AI systems under Safe AI Lab mentors, developing AI that can process and understand multiple data types simultaneously. At <strong>UPenn</strong>, I contributed to autonomous systems research, including the F1TENTH autonomous race car program. At <strong>NASA</strong>, I collaborated with the SEES program on exoplanet detection using photometry and Python-based computing.
                 </p>
                 <p className="text-dark-300 leading-relaxed">
+                  As an AI Research Fellow at Perrin Research Institution, I lead Stanford DDL projects on climate initiatives and textile pollution. 
                   My expertise spans full-stack development, machine learning, AI governance, and climate tech. I'm interested in scaling frontier tech, 
                   building founder-first products, and rethinking finance through AI. I've won multiple global competitions including the Gray Swan AI Arena Global Championship.
                 </p>
