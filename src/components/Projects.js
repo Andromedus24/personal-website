@@ -20,18 +20,9 @@ const Projects = () => {
       category: "AI/ML"
     },
     {
-      title: "web-muse - AI Site Builder",
-      description: "CLI and API for generating websites from natural language. Includes environment setup, OpenAI config, and example prompts for building landing pages and web applications.",
-      image: "/img/port2.jpg",
-      technologies: ["JavaScript", "Node.js", "CLI", "OpenAI API", "Web Generation", "AI"],
-      github: "https://github.com/ronakprabhu/web-muse",
-      demo: null,
-      category: "AI/ML"
-    },
-    {
       title: "House Price Predictor",
       description: "Linear Regression model predicting California housing prices with standard preprocessing, training, and evaluation. Built with scikit-learn, NumPy, and Pandas.",
-      image: "/img/port3.jpg",
+      image: "/img/port2.jpg",
       technologies: ["Python", "Machine Learning", "scikit-learn", "NumPy", "Pandas", "Jupyter"],
       github: "https://github.com/ronakprabhu/House-Price-Predictor",
       demo: null,
@@ -40,7 +31,7 @@ const Projects = () => {
     {
       title: "AI Call Assistant",
       description: "Rule/intent-based assistant with simple NLU and training script. Built for handling customer service calls and inquiries with natural language processing.",
-      image: "/img/port4.jpg",
+      image: "/img/port3.jpg",
       technologies: ["Python", "NLP", "NLTK", "Intent Recognition", "Chatbot", "AI"],
       github: "https://github.com/ronakprabhu/AI-Call-Assistant",
       demo: null,
@@ -49,7 +40,7 @@ const Projects = () => {
     {
       title: "Hand Controlled Object",
       description: "Computer vision prototype with camera capture and 3D object loading utilities. Demonstrates hand gesture recognition and 3D object manipulation.",
-      image: "/img/port5.jpg",
+      image: "/img/port4.jpg",
       technologies: ["Python", "Computer Vision", "OpenCV", "3D Graphics", "Gesture Recognition"],
       github: "https://github.com/ronakprabhu/Hand-Controlled-Object",
       demo: null,
@@ -58,7 +49,7 @@ const Projects = () => {
     {
       title: "Nuero Wheelchair",
       description: "Neuro/gesture-driven wheelchair controller prototype. Combines Python utilities with Arduino for brain-computer interface applications.",
-      image: "/img/port6.jpg",
+      image: "/img/port5.jpg",
       technologies: ["Python", "C++", "Arduino", "Brain-Computer Interface", "Hardware", "Embedded Systems"],
       github: "https://github.com/ronakprabhu/Nuero-Wheelchair",
       demo: null,
@@ -67,7 +58,7 @@ const Projects = () => {
     {
       title: "Finance Analysis API",
       description: "Unified financial analysis + ledger API with AI-powered insights using OpenRouter. Designed for Vercel deployment with CI/CD and real-time validation.",
-      image: "/img/port1.jpg",
+      image: "/img/port6.jpg",
       technologies: ["TypeScript", "Next.js", "AI", "Finance", "API", "Vercel", "OpenRouter"],
       github: "https://github.com/ronakprabhu/Finance-Analysis",
       demo: null,
@@ -76,7 +67,7 @@ const Projects = () => {
     {
       title: "Finance Cluster",
       description: "React webapp scaffolded with Create React App, intended to connect to a Visual Learning AI model to create clusters from financial data.",
-      image: "/img/port2.jpg",
+      image: "/img/port1.jpg",
       technologies: ["React", "JavaScript", "AI/ML", "Data Visualization", "Financial Analysis"],
       github: "https://github.com/ronakprabhu/Finance-Cluster",
       demo: null,
@@ -85,25 +76,16 @@ const Projects = () => {
     {
       title: "Firebase Android Quiz App",
       description: "Android quiz app using Firebase for auth, realtime-database, storage, and notifications. Features timer-bound tests, detailed solutions, and admin features.",
-      image: "/img/port3.jpg",
+      image: "/img/port2.jpg",
       technologies: ["Java", "Android", "Firebase", "Realtime Database", "Push Notifications", "Mobile"],
       github: "https://github.com/ronakprabhu/firebase-android-quiz-app",
       demo: null,
       category: "Mobile Development"
     },
     {
-      title: "NIA MCP Personal",
-      description: "MCP server that integrates Nia's codebase understanding into tools like Cursor and Claude via function-calling. Enables AI-powered codebase analysis.",
-      image: "/img/port4.jpg",
-      technologies: ["JavaScript", "MCP", "AI", "Codebase Analysis", "Developer Tools"],
-      github: "https://github.com/ronakprabhu/nia-mcp-personal",
-      demo: null,
-      category: "Developer Tools"
-    },
-    {
       title: "Financial Model Evaluator",
       description: "JavaScript front-end base intended to connect to a distilled/trained AI model for financial model evaluation. Includes sample data and testing framework.",
-      image: "/img/port5.jpg",
+      image: "/img/port3.jpg",
       technologies: ["JavaScript", "HTML", "CSS", "AI/ML", "Financial Modeling", "Testing"],
       github: "https://github.com/ronakprabhu/Financial-Model-Eval",
       demo: null,
@@ -112,7 +94,7 @@ const Projects = () => {
     {
       title: "AgentHacks Clone",
       description: "Minimal clone project bootstrapped for experimentation. Built for testing and developing AI agent capabilities and workflows.",
-      image: "/img/port6.jpg",
+      image: "/img/port4.jpg",
       technologies: ["JavaScript", "React", "AI Agents", "Experimentation", "Prototyping"],
       github: "https://github.com/ronakprabhu/AgentHacks_Clone",
       demo: null,
@@ -208,18 +190,17 @@ const Projects = () => {
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs text-accent-500 font-mono">{project.category}</span>
                       <div className="flex space-x-2">
-                        {project.github && (
-                          <motion.a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="p-2 bg-dark-700 hover:bg-accent-500 rounded-full transition-colors duration-200"
-                          >
-                            <Github size={16} />
-                          </motion.a>
-                        )}
+                        <motion.a
+                          href="https://github.com/ronakprabhu"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-2 bg-dark-700 hover:bg-accent-500 rounded-full transition-colors duration-200"
+                          title="View GitHub Profile"
+                        >
+                          <Github size={16} />
+                        </motion.a>
                         {project.demo && (
                           <motion.a
                             href={project.demo}
