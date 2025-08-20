@@ -36,7 +36,7 @@ git add .
 git commit -m "Initial portfolio website commit"
 
 # Add GitHub as remote origin (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/KrishD22/portfolio.git
+git remote add origin https://github.com/RonakPrabhu/portfolio.git
 
 # Push to GitHub
 git branch -M main
@@ -66,7 +66,7 @@ npm run deploy
 
 - GitHub Pages will take a few minutes to build and deploy
 - You can check the deployment status in the **"Actions"** tab
-- Your site will be available at: `https://krishd22.github.io/portfolio`
+- Your site will be available at: `https://ronakprabhu.github.io/portfolio`
 
 ## 🔄 Updating Your Site
 
@@ -146,7 +146,7 @@ Your site is already optimized with:
 ## 🎉 Success!
 
 Once deployed, your portfolio will be live at:
-**https://krishd22.github.io/portfolio**
+**https://ronakprabhu.github.io/portfolio**
 
 Share this link with potential employers, clients, and on your social media profiles!
 

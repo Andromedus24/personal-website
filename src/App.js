@@ -30,7 +30,7 @@ function App() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="text-4xl font-bold gradient-text mb-4">Krish Desai</div>
+          <div className="text-4xl font-bold gradient-text mb-4">Ronak Prabhu</div>
           <div className="w-16 h-16 border-4 border-accent-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
         </motion.div>
       </div>

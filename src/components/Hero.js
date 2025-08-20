@@ -141,7 +141,7 @@ const Hero = () => {
 
           {/* Name */}
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold mb-12">
-            <span className="gradient-text">Krish Desai</span>
+            <span className="gradient-text">Ronak Prabhu</span>
           </motion.h1>
 
           {/* Animated Tagline */}
@@ -204,8 +204,8 @@ const Hero = () => {
           {/* CTA Buttons */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
             <motion.a
-              href={`${process.env.PUBLIC_URL}/KrishDesaiResume.pdf`}
-              download="KrishDesaiResume.pdf"
+              href={`${process.env.PUBLIC_URL}/Ronak_Prabhu_Resume.pdf`}
+              download="Ronak_Prabhu_Resume.pdf"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white rounded-full font-semibold flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-accent-500/25 group"
@@ -229,7 +229,7 @@ const Hero = () => {
           {/* Social Links */}
           <motion.div variants={itemVariants} className="flex justify-center items-center gap-6">
             <motion.a
-              href="https://github.com/KrishD22"
+              href="https://github.com/RonakPrabhu"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -241,7 +241,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="https://www.linkedin.com/in/krishhdesai/"
+              href="https://www.linkedin.com/in/ronakprabhu/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -253,7 +253,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="mailto:krishhsdesai@gmail.com"
+              href="mailto:ronakprabhu@gmail.com"
               whileHover={{ scale: 1.2, y: -5 }}
               whileTap={{ scale: 0.9 }}
               className="p-3 bg-dark-800 hover:bg-accent-500 rounded-full transition-all duration-300 group relative overflow-hidden"

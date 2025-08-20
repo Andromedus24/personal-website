@@ -48,7 +48,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold gradient-text"
           >
-            KD
+            RP
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -67,8 +67,8 @@ const Navbar = () => {
             
             {/* Resume Button */}
             <motion.a
-              href={`${process.env.PUBLIC_URL}/KrishDesaiResume.pdf`}
-              download="KrishDesaiResume.pdf"
+              href={`${process.env.PUBLIC_URL}/Ronak_Prabhu_Resume.pdf`}
+              download="Ronak_Prabhu_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 bg-accent-500 hover:bg-accent-600 text-white rounded-full font-medium transition-colors duration-200"
@@ -110,8 +110,8 @@ const Navbar = () => {
                   </motion.button>
                 ))}
                 <motion.a
-                  href={`${process.env.PUBLIC_URL}/KrishDesaiResume.pdf`}
-                  download="KrishDesaiResume.pdf"
+                  href={`${process.env.PUBLIC_URL}/Ronak_Prabhu_Resume.pdf`}
+                  download="Ronak_Prabhu_Resume.pdf"
                   whileHover={{ scale: 1.05 }}
                   className="px-6 py-2 bg-accent-500 hover:bg-accent-600 text-white rounded-full font-medium transition-colors duration-200 text-center"
                 >

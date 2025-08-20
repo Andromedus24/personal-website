@@ -1,8 +1,8 @@
 {
-  "name": "krish-desai-portfolio",
+  "name": "ronak-prabhu-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://krishd22.github.io/Portfolio",
+  "homepage": "https://ronakprabhu.github.io/Portfolio",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

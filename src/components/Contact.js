@@ -104,8 +104,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'krishhsdesai@gmail.com',
-      href: 'mailto:krishhsdesai@gmail.com'
+      value: 'ronakprabhu@gmail.com',
+      href: 'mailto:ronakprabhu@gmail.com'
     },
     {
       icon: Phone,
@@ -122,8 +122,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/KrishD22', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/krishhdesai/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/RonakPrabhu', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ronakprabhu/', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
   ];
 
