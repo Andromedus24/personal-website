@@ -27,8 +27,8 @@ const Contact = () => {
     script.async = true;
     script.onload = () => {
       if (window.emailjs) {
-        // Initialize EmailJS with your public key
-        const userId = 'WDRe3qLve2C3BEM4C'; // Your EmailJS public key
+        // Initialize EmailJS with environment variable
+        const userId = process.env.REACT_APP_EMAIL_USER_ID || 'WDRe3qLve2C3BEM4C';
         window.emailjs.init(userId);
         console.log('EmailJS initialized successfully');
       } else {
@@ -77,9 +77,9 @@ const Contact = () => {
 
       console.log('Form Data:', data);
 
-      // Send email using EmailJS with your service key
-      const serviceId = 'service_fqc3ds1'; // Your EmailJS service ID
-      const templateId = 'template_1fg7wfl'; // Your EmailJS template ID
+      // Send email using EmailJS with environment variables
+      const serviceId = process.env.REACT_APP_EMAIL_SERVICE || 'service_fqc3ds1';
+      const templateId = process.env.REACT_APP_EMAIL_TEMPLATE || 'template_1fg7wfl';
       const response = await window.emailjs.send(serviceId, templateId, data);
       
       console.log('EmailJS Response:', response);
